@@ -14,17 +14,10 @@
 
 get_header(); ?>
 
-<?php 
-	
-	//this is a change to my file.
-
-?>
-
-
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-		<?php if ( have_posts()== true  ) : ?>
+		<?php if ( have_posts() ) : ?>
 
 			<?php if ( is_home() && ! is_front_page() ) : ?>
 				<header>
@@ -33,18 +26,13 @@ get_header(); ?>
 			<?php endif; ?>
 
 			<?php /* Start the Loop */ ?>
-			<?php rewind_posts(); ?>
-			<?php query_posts('category_name=history'); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
-
 				<div>
-					<?php the_excerpt(); ?>
-
-						<?php the_post_thumbnail(); ?>
+				<?php echo get_the_date(); ?>
+				<?php echo get_the_time();?>
 				</div>
 
-				<!--<?php
-
+				<?php
 
 					/*
 					 * Include the Post-Format-specific template for the content.
@@ -52,7 +40,7 @@ get_header(); ?>
 					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 					 */
 					get_template_part( 'template-parts/content', get_post_format() );
-				?>-->
+				?>
 
 			<?php endwhile; ?>
 
