@@ -113,7 +113,7 @@ dfn {
 }
 
 h1 {
-	font-size: 2em;
+	font-size: 3em;
 	margin: 0.67em 0;
 }
 
@@ -900,7 +900,7 @@ object {
 }
 
 header{
-	background-color: black;
+	background-color: lightgrey;
 }
 .myPost{
 	width: 25%;
@@ -934,12 +934,63 @@ header{
 #secondary{
 	background-color: lightpink;
 	width: 20%;
+	float: left;
+	margin:  5% 0 5% 5%;
 }
 #colophon{
-	background-color: lightgrey;
+	background-color:  #666;
+}
+#date{
+	float: center;
+	font-size: 35px;
+}
+#primary{
+	width: 65%;
+	margin: 0 5% 5% 5%;
+	float: left;
 }
 
 
+/*shi's nav edits*/
+
+#hNav a:hover {
+background-color : #666;
+padding : 0.5em 0.2em 0.5em 0.2em;
+}
+#hNav a.selected {
+background-color : #fff;
+padding : 0.3em 0.2em 0.5em 0.2em;
+color : #333;
+}
+
+#hNav{
+	background-color : #333;
+font-family : Verdana;
+padding : 0.5em;
+}
+#hNav a{
+	background-color : #999;
+color : #fff;
+padding : 0.2em;
+text-decoration : none;
+}
+#pl{
+	background-color: #444;
+	color: white;
+	margin: 0 30% 0 30%;
+}
+.longjing{
+	padding: 5px 40%;
+}
+.yanji{
+	padding: 5px 30%;
+}
+.shenyang{
+	padding: 5px 20%;
+}
+.dali{
+	padding: 5px 15%;
+}
 
 
 

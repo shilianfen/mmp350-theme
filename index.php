@@ -21,15 +21,19 @@ get_header(); ?>
 
 			<?php if ( is_home() && ! is_front_page() ) : ?>
 				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
+					<h1 class="page-title screen-reader-text"><?php echo get_the_title(); ?></h1>
 				</header>
 			<?php endif; ?>
 
+
+
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
-				<div>
+				<h2><?php single_post_title(); ?></h2>
+				<div id="date">
 				<?php echo get_the_date(); ?>
 				<?php echo get_the_time();?>
+				 <?php the_category( 'turkey'); ?> 
 				</div>
 
 				<?php
