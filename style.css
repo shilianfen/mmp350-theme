@@ -995,6 +995,12 @@ footer{
 	margin-bottom: 0;
 	height: 50px;
 }
+.entry-content{
+	background-color: lightblue;
+}
+.plug-content{
+	background-color: lightyellow;
+}
 
 
 
